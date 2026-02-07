@@ -1,0 +1,24 @@
+schema_version = "1.0.0"
+
+id = "sloths_blender_tools"
+version = "1.0.0"
+name = "Sloths Blender Tools"
+tagline = "Utility buttons for quick cleanup of normals, materials, textures, and trees"
+
+maintainer = "WaterSloth"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+website = "https://watersloth.carrd.co/"
+
+license = [
+  "SPDX:MIT",
+]
+
+# Optional:
+# tags = ["3D View", "Material", "Mesh"]
+# [permissions]
+# network = "Only needed if the add-on accesses the internet"
+# files = "Only needed if the add-on reads/writes files outside Blender's normal operations"
+
