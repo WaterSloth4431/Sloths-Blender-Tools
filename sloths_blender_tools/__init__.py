@@ -1,10 +1,11 @@
 bl_info = {
     "name": "Sloths Blender Tools",
     "author": "Nw Stoner",
-    "version": (1, 4, 1),
+    "version": (1, 0, 0),
     "blender": (3, 6, 0),
-    "location": "View3D > Sidebar (N) > Sloth's Carx Tools",
+    "location": "View3D > Sidebar (N) > Sloth's Tools",
     "description": "Sloth's Carx Blender Tools.",
+    "doc_url": "https://watersloth.carrd.co/",
     "category": "Object",
 }
 
@@ -251,7 +252,7 @@ class SLOTHS_OT_clean_trees_selected(Operator):
 
 
 # =====================================================
-# UI Panel (FIXED VIEW_3D)
+# UI Panel
 # =====================================================
 class SLOTHS_PT_tools_panel(Panel):
     bl_label = "Sloth's Tools"
@@ -307,9 +308,14 @@ classes = (
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
-    bpy.types.Scene.sloths_settings = PointerProperty(type=SLOTHS_Settings)
+
+    # Guard in case this was previously created in-session
+    if not hasattr(bpy.types.Scene, "sloths_settings"):
+        bpy.types.Scene.sloths_settings = PointerProperty(type=SLOTHS_Settings)
 
 def unregister():
-    del bpy.types.Scene.sloths_settings
+    if hasattr(bpy.types.Scene, "sloths_settings"):
+        del bpy.types.Scene.sloths_settings
+
     for cls in reversed(classes):
         bpy.utils.unregister_class(cls)
