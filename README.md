@@ -3,7 +3,7 @@
 A small set of Blender editor tools bundled into a simple sidebar panel with one-click buttons.  
 Find it in: **3D Viewport → N Panel → Sloth’s Tools**
 
-##Website: https://watersloth.carrd.co/
+## Website: https://watersloth.carrd.co/
 
 ---
 
