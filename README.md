@@ -1,3 +1,5 @@
+<img width="1280" height="640" alt="Untitled (1)" src="https://github.com/user-attachments/assets/dec5f95a-bfe4-4876-be57-d880f098f6dd" />
+
 # Sloths Blender Tools
 
 A small set of Blender editor tools bundled into a simple sidebar panel with one-click buttons.  
