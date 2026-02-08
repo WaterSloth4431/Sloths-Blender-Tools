@@ -116,4 +116,4 @@ A mesh cleanup helper designed for “tree-like” imports, removing faces that 
 ---
 
 ## License
-MIT (or your chosen license — update this section to match your repo).
+MIT
