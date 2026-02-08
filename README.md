@@ -1,9 +1,5 @@
 # Sloths Blender Tools
 
-<img width="1280" height="640" alt="Untitled (1)" src="https://github.com/user-attachments/assets/65adfdf9-0fc3-458c-b464-2501ed19a77c" />
-
----
-
 A small set of Blender editor tools bundled into a simple sidebar panel with one-click buttons.  
 Find it in: **3D Viewport → N Panel → Sloth’s Tools**
 
